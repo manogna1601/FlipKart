@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+<div class="card mb-3 p-3 border-bottom d-flex justify-content-center" style=" background-color: white;">
+    <app-categories></app-categories>
+</div>
+<div class="d-flex mb-3 justify-content-center mx-5">
+    <div class="card" style="width: 100%;">
+        <p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+            <ng-template let-product pTemplate="item">
+                <div class="border-1 surface-border border-round text-center">
+                    <div>
+                        <img style="width: 100%;" src="{{product}}" class="w-6 shadow-2" />
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
+<div *ngFor="let category of categories" class="card mt-3 mx-5">
+    <app-landing-page-item-category [itemCategory]="category"></app-landing-page-item-category>
+</div>
+

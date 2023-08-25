@@ -1,0 +1,42 @@
+::ng-deep{
+    .p-progressbar{
+        height: 5px;
+        .p-progressbar-value{
+            background: #388e3c;
+        }
+    }
+    .p-progressbar-determinate {
+        .p-progressbar-label{
+            display: none !important;
+        }
+    }
+}
+
+.rating-overlay{
+    font-size: 0.8rem;
+    ::ng-deep{
+        .pi{
+            font-size: 0.5rem;
+        }
+    }
+}
+
+.rating-overlay:nth-child(5){
+    ::ng-deep{
+        .p-progressbar{
+            .p-progressbar-value{
+                background: red;
+            }
+        }
+    }
+}
+
+.rating-overlay:nth-child(4){
+    ::ng-deep{
+        .p-progressbar{
+            .p-progressbar-value{
+                background: yellow;
+            }
+        }
+    }
+}
