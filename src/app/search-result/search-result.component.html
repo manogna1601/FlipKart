@@ -1,8 +1,8 @@
 <div>
     <app-nav-bar></app-nav-bar>
-    <div class="container-fluid px-5">
-        <div class="col-12 d-flex gap-2 justify-content-center">
-            <div class="col-2 filters mt-2" style="background: white;">
+    <div class="container-fluid px-auto search-result">
+        <div class="col-12 row justify-content-center m-0">
+            <div class="col col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-12 filters mt-2" style="background: white;">
                 <div class="card p-3 border-bottom">
                     <h5 class="m-0">Filters</h5>
                 </div>
@@ -12,11 +12,11 @@
                     <h6>Mobiles</h6>
                 </div>
                 <div class="card p-3 border-bottom" style="font-size: 12px;">
-                    <p class="m-0 fw-bold">PRICE</p>
-                    <div class="card px-2 flex justify-content-center my-3">
+                    <p class="col-sm-12 m-0 fw-bold">PRICE</p>
+                    <div class="col-sm-12 card px-2 flex justify-content-center my-3">
                         <p-slider [(ngModel)]="range" [step]="20" [range]="true"></p-slider>
                     </div>
-                    <div class="d-flex align-items-center gap-3">
+                    <div class=" col-sm-12 d-flex align-items-center gap-3 price-dropdowns">
                         <p-dropdown [options]="minRange" [(ngModel)]="selectedMinRange" optionLabel="name"></p-dropdown>
                         <p class="m-0">to</p>
                         <p-dropdown [options]="maxRange" [(ngModel)]="selectedMaxRange" optionLabel="name"></p-dropdown>
@@ -49,13 +49,13 @@
                     </p-accordion>
                 </div>
             </div>
-            <div class="col-9 mt-2">
+            <div class="col col-lg-9 col-md-8 col-sm-12 mt-2">
                 <div class="card flex justify-content-center">
                     <p-breadcrumb class="max-w-full" [model]="items" [home]="home"></p-breadcrumb>
                     <h6 class="ps-3">Showing 1 - 24 of 8,811 results for "mobiles"</h6>
                     <div class="ps-3 d-flex align-items-center border-bottom">
                         <h6 style="font-size: 14px;" class="m-0">Sort By</h6>
-                        <p-tabMenu [model]="menuItems" [activeItem]="activeItem"></p-tabMenu>
+                        <p-tabMenu class="col-md-9 col-sm-9 col-xs-6 filter-tabmenu" [model]="menuItems" [activeItem]="activeItem"></p-tabMenu>
                     </div>
                 </div>
                 <app-search-result-item></app-search-result-item>

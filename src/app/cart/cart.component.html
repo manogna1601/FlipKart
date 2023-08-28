@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
-<div class="d-flex justify-content-center gap-3 mt-3">
-    <div id="menu-bar" class="d-flex flex-column border-start border-end" style="width: 45%; height: fit-content;">
+<div class="container row mt-3 mx-auto p-0 cart">
+    <div id="menu-bar" class="col col-lg-9 col-sm-12 p-0 d-flex flex-column border-start border-end mb-3" style="height: fit-content;">
         <div>
             <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)"></p-tabMenu>
         </div>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div id="price-details" style="width: 20%; height: fit-content;">
+    <div id="price-details" class="col col-lg-3 col-sm-12" style="height: fit-content;">
         <div class="d-flex flex-column">
             <div class="card p-3 border-bottom" >
                 <h6 class="text-muted m-0">PRICE DETAILS</h6>

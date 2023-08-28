@@ -11,6 +11,7 @@ export class NavBarComponent {
 
   ngOnInit() {
     this.items = [
+      {label: "Become a Seller"},
       {
         label: 'More',
         items: [

@@ -40,3 +40,25 @@
         }
     }
 }
+
+.f-assured{
+    height: 1rem;
+}
+
+@media screen and (max-width: 576px){
+    .prod-desc{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .prod-img{
+        width: 20% !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .prod-img{
+        width: 30% !important;
+    }
+}

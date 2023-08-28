@@ -26,9 +26,6 @@ export class CartComponent {
       if(display){
         display.style.display ="block";
       }
-      if(menu){
-        menu.style.width = "45%";
-      }
     }
     else{
       this.isFlipkart = false;
@@ -36,9 +33,6 @@ export class CartComponent {
       var menu = document.getElementById("menu-bar")
       if(display){
         display.style.display ="none";
-      }
-      if(menu){
-        menu.style.width = "60%";
       }
     }
     if(!this.isFlipkart){
